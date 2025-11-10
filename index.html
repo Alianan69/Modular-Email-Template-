@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template Builder - SaaS Marketing Platform</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3B82F6',secondary:'#8B5CF6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { font-family: 'Inter', sans-serif; }
+        .template-card { transition: all 0.3s ease; }
+        .template-card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <div class="font-['Pacifico'] text-2xl text-primary">logo</div>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Templates</a>
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Builder</a>
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Analytics</a>
+                        <a href="#" class="text-gray-700 hover:text-primary font-medium">Pricing</a>
+                    </nav>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700 hover:text-primary font-medium">Sign In</button>
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-blue-600 whitespace-nowrap">Start Free Trial</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden">
+        <div class="absolute inset-0" style="background-image: url('https://readdy.ai/api/search-image?query=Modern%20email%20marketing%20workspace%20with%20clean%20interface%20design%2C%20professional%20business%20communication%20tools%2C%20digital%20marketing%20dashboard%20with%20analytics%20charts%2C%20contemporary%20office%20environment%20with%20soft%20lighting%2C%20minimalist%20design%20elements%2C%20technology%20and%20innovation%20theme%2C%20light%20blue%20and%20purple%20color%20scheme%2C%20high-tech%20atmosphere&width=1920&height=800&seq=hero-bg-001&orientation=landscape'); background-size: cover; background-position: center; opacity: 0.1;"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold text-gray-900 mb-6">Professional Email Templates<br>for Every Business Need</h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Create stunning, responsive email campaigns with our collection of 75+ professionally designed templates. Perfect for marketing, transactional, and customer communication needs.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button class="bg-primary text-white px-8 py-3 !rounded-button font-semibold hover:bg-blue-600 whitespace-nowrap">Browse Templates</button>
+                    <button class="border border-gray-300 text-gray-700 px-8 py-3 !rounded-button font-semibold hover:bg-gray-50 whitespace-nowrap">Watch Demo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <div class="flex flex-wrap gap-3">
+                    <button class="bg-primary text-white px-4 py-2 !rounded-button font-medium whitespace-nowrap">All Categories</button>
+                    <button class="bg-gray-100 text-gray-700 px-4 py-2 !rounded-button font-medium hover:bg-gray-200 whitespace-nowrap">Promotional</button>
+                    <button class="bg-gray-100 text-gray-700 px-4 py-2 !rounded-button font-medium hover:bg-gray-200 whitespace-nowrap">Transactional</button>
+                    <button class="bg-gray-100 text-gray-700 px-4 py-2 !rounded-button font-medium hover:bg-gray-200 whitespace-nowrap">Newsletter</button>
+                    <button class="bg-gray-100 text-gray-700 px-4 py-2 !rounded-button font-medium hover:bg-gray-200 whitespace-nowrap">Reminder</button>
+                    <button class="bg-gray-100 text-gray-700 px-4 py-2 !rounded-button font-medium hover:bg-gray-200 whitespace-nowrap">Feedback</button>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="relative">
+                        <div class="w-6 h-6 flex items-center justify-center absolute left-3 top-1/2 transform -translate-y-1/2">
+                            <i class="ri-search-line text-gray-400"></i>
+                        </div>
+                        <input type="text" placeholder="Search templates..." class="pl-10 pr-4 py-2 border border-gray-300 rounded-lg w-64 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    <div class="relative">
+                        <button class="flex items-center gap-2 px-4 py-2 border border-gray-300 !rounded-button text-gray-700 hover:bg-gray-50 whitespace-nowrap">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-filter-line"></i>
+                            </div>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Grid -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Template Card 1 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=Professional%20email%20template%20mockup%20with%20hero%20banner%20design%2C%20clean%20layout%20with%20call-to-action%20button%2C%20modern%20business%20communication%20design%2C%20promotional%20email%20interface%2C%20marketing%20campaign%20template%2C%20minimalist%20design%20with%20blue%20accent%20colors&width=320&height=240&seq=template-001&orientation=landscape" alt="Hero CTA Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Hero CTA</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">Product Launch Campaign</h3>
+                    <p class="text-sm text-gray-600 mb-4">Perfect for announcing new products or services with compelling visuals and clear call-to-action.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 2 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=E-commerce%20product%20grid%20email%20template%20design%2C%20multiple%20product%20showcase%20layout%2C%20shopping%20cart%20interface%2C%20retail%20marketing%20email%20design%2C%20product%20catalog%20template%20with%20clean%20grid%20system%2C%20modern%20online%20store%20communication&width=320&height=240&seq=template-002&orientation=landscape" alt="Product Grid Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Product Grid</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">E-commerce Showcase</h3>
+                    <p class="text-sm text-gray-600 mb-4">Display multiple products or services in an organized grid layout with pricing and descriptions.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 3 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=Newsletter%20email%20template%20with%20content%20digest%20layout%2C%20article%20preview%20blocks%2C%20news%20update%20design%2C%20informational%20email%20template%2C%20content%20marketing%20communication%2C%20editorial%20newsletter%20design%20with%20clean%20typography&width=320&height=240&seq=template-003&orientation=landscape" alt="Newsletter Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Newsletter</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">Weekly Newsletter</h3>
+                    <p class="text-sm text-gray-600 mb-4">Share company updates, industry news, and valuable content with your subscribers.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 4 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-orange-100 to-orange-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=Order%20confirmation%20email%20template%20design%2C%20transaction%20receipt%20layout%2C%20e-commerce%20confirmation%20message%2C%20purchase%20summary%20template%2C%20clean%20minimal%20transactional%20email%20design%2C%20order%20details%20interface&width=320&height=240&seq=template-004&orientation=landscape" alt="Order Confirmation Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Confirmation</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">Order Confirmation</h3>
+                    <p class="text-sm text-gray-600 mb-4">Confirm purchases and bookings with detailed order summaries and tracking information.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 5 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-red-100 to-red-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=Welcome%20onboarding%20email%20template%20design%2C%20user%20registration%20confirmation%2C%20new%20member%20greeting%20message%2C%20customer%20onboarding%20sequence%2C%20welcome%20series%20email%20design%20with%20step-by-step%20guidance&width=320&height=240&seq=template-005&orientation=landscape" alt="Welcome Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Welcome</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">Welcome Onboarding</h3>
+                    <p class="text-sm text-gray-600 mb-4">Greet new customers and guide them through your platform with step-by-step instructions.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 6 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-teal-100 to-teal-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=Promotional%20sale%20email%20template%20with%20discount%20banner%2C%20special%20offer%20design%2C%20marketing%20campaign%20layout%2C%20seasonal%20promotion%20template%2C%20coupon%20code%20email%20design%20with%20urgency%20elements&width=320&height=240&seq=template-006&orientation=landscape" alt="Promotion Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Promotion</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">Flash Sale Alert</h3>
+                    <p class="text-sm text-gray-600 mb-4">Drive urgency and conversions with time-sensitive offers and discount campaigns.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 7 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-indigo-100 to-indigo-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=Appointment%20reminder%20email%20template%20design%2C%20calendar%20notification%20layout%2C%20booking%20confirmation%20reminder%2C%20scheduled%20meeting%20alert%2C%20professional%20appointment%20communication%20template&width=320&height=240&seq=template-007&orientation=landscape" alt="Reminder Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Reminder</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">Appointment Reminder</h3>
+                    <p class="text-sm text-gray-600 mb-4">Reduce no-shows with timely reminders for appointments, meetings, and events.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Card 8 -->
+            <div class="template-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-pink-100 to-pink-200 relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=Customer%20feedback%20survey%20email%20template%2C%20review%20request%20design%2C%20satisfaction%20survey%20layout%2C%20feedback%20collection%20template%2C%20rating%20and%20review%20email%20interface%20with%20star%20ratings&width=320&height=240&seq=template-008&orientation=landscape" alt="Feedback Template" class="w-full h-full object-cover object-top">
+                    <div class="absolute top-3 right-3 bg-white rounded-full px-2 py-1 text-xs font-medium text-gray-600">Feedback</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-gray-900 mb-2">Customer Feedback</h3>
+                    <p class="text-sm text-gray-600 mb-4">Collect valuable insights and reviews from your customers to improve your services.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-smartphone-line text-gray-400"></i>
+                            </div>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-computer-line text-gray-400"></i>
+                            </div>
+                            <span class="text-xs text-gray-500">Responsive</span>
+                        </div>
+                        <button class="text-primary hover:text-blue-600 font-medium text-sm whitespace-nowrap">Preview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="text-center mt-12">
+            <button class="bg-gray-100 text-gray-700 px-8 py-3 !rounded-button font-semibold hover:bg-gray-200 whitespace-nowrap">Load More Templates</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Templates?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Built with industry best practices and tested across all major email clients</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-smartphone-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile Responsive</h3>
+                    <p class="text-gray-600">All templates are optimized for mobile devices and tested across major email clients including Gmail, Outlook, and Apple Mail.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-palette-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Easy Customization</h3>
+                    <p class="text-gray-600">Simple placeholder system allows you to customize colors, text, images, and branding without any design experience.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <i class="ri-code-s-slash-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Clean Code</h3>
+                    <p class="text-gray-600">Built with MJML and compiled to clean HTML, ensuring maximum deliverability and compatibility across platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-primary to-secondary py-16">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready to Transform Your Email Marketing?</h2>
+            <p class="text-xl text-blue-100 mb-8">Join thousands of businesses using our templates to create professional email campaigns</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-3 !rounded-button font-semibold hover:bg-gray-50 whitespace-nowrap">Start Free Trial</button>
+                <button class="border-2 border-white text-white px-8 py-3 !rounded-button font-semibold hover:bg-white hover:text-primary whitespace-nowrap">View Pricing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="font-['Pacifico'] text-2xl text-white mb-4">logo</div>
+                    <p class="text-gray-400 mb-4">Professional email templates for modern businesses. Create stunning campaigns that convert.</p>
+                    <div class="flex space-x-4">
+                        <div class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer">
+                            <i class="ri-twitter-line"></i>
+                        </div>
+                        <div class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer">
+                            <i class="ri-linkedin-line"></i>
+                        </div>
+                        <div class="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer">
+                            <i class="ri-github-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Templates</a></li>
+                        <li><a href="#" class="hover:text-white">Builder</a></li>
+                        <li><a href="#" class="hover:text-white">Analytics</a></li>
+                        <li><a href="#" class="hover:text-white">Integrations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white">Tutorials</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Email Template Builder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="filter-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('section:nth-of-type(3) button');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-primary', 'text-white');
+                        btn.classList.add('bg-gray-100', 'text-gray-700');
+                    });
+                    
+                    this.classList.remove('bg-gray-100', 'text-gray-700');
+                    this.classList.add('bg-primary', 'text-white');
+                });
+            });
+        });
+    </script>
+
+    <script id="search-functionality">
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.querySelector('input[placeholder="Search templates..."]');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                console.log('Searching for:', searchTerm);
+            });
+        });
+    </script>
+
+    <script id="template-interactions">
+        document.addEventListener('DOMContentLoaded', function() {
+            const previewButtons = document.querySelectorAll('button:contains("Preview")');
+            
+            document.querySelectorAll('.template-card button').forEach(button => {
+                if (button.textContent.includes('Preview')) {
+                    button.addEventListener('click', function() {
+                        console.log('Preview template');
+                    });
+                }
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9tkQZJiyi2ps9zUYm8TDsL6qXo4YmZx0Ot5rBlAlEd', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+
+</script>
+</body>
+</html>
